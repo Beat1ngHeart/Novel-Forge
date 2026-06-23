@@ -1,24 +1,40 @@
+# Environment
 .env
 .env.*
 !.env.example
 
+# Node / Frontend
 node_modules/
 .next/
+out/
 dist/
 build/
+*.tsbuildinfo
 
+# Python / Backend
 .venv/
 __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 *.pyc
+*.pyo
+*.egg-info/
 
+# Data (local only)
 data/uploads/*
 data/exports/*
+data/db/*
 !data/uploads/.gitkeep
 !data/exports/.gitkeep
+!data/db/.gitkeep
 
+# IDE
 .DS_Store
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
